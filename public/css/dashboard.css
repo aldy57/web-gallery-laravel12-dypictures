@@ -1,0 +1,194 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.top-header {
+    background: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1rem 2rem;
+    margin: -2rem -2rem 2rem -2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.user-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.user-avatar:hover {
+    background: #e0e0e0;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    display: none;
+    overflow: hidden;
+}
+
+.user-dropdown.show {
+    display: block;
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-dropdown-header {
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-dropdown-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.user-dropdown-name {
+    font-weight: 600;
+    color: #222;
+}
+
+.user-dropdown-item {
+    padding: 0.75rem 1rem;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.user-dropdown-item:hover {
+    background: #f8f9fa;
+    color: #222;
+}
+
+.user-dropdown-item.logout {
+    color: #dc3545;
+    border-top: 1px solid #f0f0f0;
+}
+
+.user-dropdown-item.logout:hover {
+    background: #fff5f5;
+}
+
+.toast {
+    min-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.toast-header {
+    border-radius: 12px 12px 0 0;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.toast-body {
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+.toast.show {
+    animation: slideInRight 0.4s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+}
+
+.table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.table thead th {
+    border-bottom: 2px solid #f0f0f0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #888;
+    padding-bottom: 1rem;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 1rem 0.75rem;
+}
+
+.btn-dark {
+    background-color: #222;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #000;
+}
+
+.btn-action {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}

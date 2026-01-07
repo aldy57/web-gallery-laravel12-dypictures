@@ -1,0 +1,44 @@
+.contact-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    background: #fff;
+    padding: 3rem 2.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-select:focus {
+    box-shadow: none;
+    border-color: #222;
+}
+
+.btn-submit {
+    background-color: #222;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+}

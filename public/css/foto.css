@@ -1,0 +1,11 @@
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.ratio[data-bs-toggle="modal"]:hover {
+    opacity: 0.9;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
